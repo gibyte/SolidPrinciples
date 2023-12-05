@@ -1,7 +1,11 @@
 ﻿namespace SOLID
 {
-    public abstract class Game
+    // Open/Closed Principle (OCP)
+    // Liskov Substitution Principle (LSP)
+    public abstract class Game : IGame
     {
-        public abstract void Play();
+        protected int _val;
+        abstract public int GetValue();
+        abstract public void Play(); 
     }
 }

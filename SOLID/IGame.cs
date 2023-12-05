@@ -1,7 +1,7 @@
 ﻿namespace SOLID
 {
-    public interface IGame
+    // Interface Segregation Principle (ISP)
+    public interface IGame : IPlay, IRandomValue
     {
-        public void Play();
     }
 }

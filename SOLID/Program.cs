@@ -12,7 +12,12 @@ class Solid
 {
     static void Main(string[] args)
     {
-        Game game = new GameRandomNumber();
-        game.Play();
+        IEnumerable<Game> games = new List<Game>()
+        {
+            new GameRandomValue()
+        };
+        GameManager gameManager = new GameManager(games);
+        gameManager.PlayGames();
+
     }
 }
