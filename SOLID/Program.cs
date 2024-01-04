@@ -14,10 +14,9 @@ class Solid
     {
         IEnumerable<Game> games = new List<Game>()
         {
-            new GameRandomValue()
+            new(new Settings(){ MinValue=1,MaxValue=10 }, new RandomValue())
         };
-        GameManager gameManager = new GameManager(games);
+        GameManager gameManager = new(games);
         gameManager.PlayGames();
-
     }
 }

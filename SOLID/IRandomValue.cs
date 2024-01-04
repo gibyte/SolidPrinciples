@@ -3,6 +3,6 @@
     //Single Responsibility Principle (SRP)
     public interface IRandomValue
     {
-        int GetValue();
+        int GetValue(int maxVal, int minVal);
     }
 }
